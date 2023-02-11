@@ -8,7 +8,8 @@ export const Tile: FC<TileProps> = ({
   points,
   bonus,
   backgroundColor = 'var(--primary)',
-  className
+  className,
+  style
 }: TileProps) => {
   let role;
 
@@ -18,6 +19,7 @@ export const Tile: FC<TileProps> = ({
 
   return (
     <StylesWrapper
+      style={style}
       className={className}
       data-testid="tile"
       backgroundColor={backgroundColor}
