@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 import { montserratRegularDisplay } from '../../styles';
 
-export const StylesWrapper = styled.div<{ backgroundColor: string }>`
+export const StylesWrapper = styled.div<{ backgroundColor: string; role?: string }>`
   ${montserratRegularDisplay}
 
-  height: 100%;
-  width: 100%;
+  height: 16rem;
+  width: 16rem;
   background-color: ${(props) => props.backgroundColor};
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--white);
+  cursor: ${(props) => (props.role === 'button' ? 'pointer' : 'default')};
 `;

@@ -1,14 +1,15 @@
+import { FC } from 'react';
+import { TileProps } from './tile.interface';
 import { StylesWrapper } from './tile.styles';
 
-interface TileProps {
-  children: string;
-  onClick?: ({ points, bonus }: { points: number; bonus: number }) => void;
-  points?: number;
-  bonus?: number;
-  backgroundColor: string;
-}
-
-export const Tile = ({ children, onClick, points, bonus, backgroundColor = 'var(--primary)' }: TileProps) => {
+export const Tile: FC<TileProps> = ({
+  children,
+  onClick,
+  points,
+  bonus,
+  backgroundColor = 'var(--primary)',
+  className
+}: TileProps) => {
   let role;
 
   if (onClick) {
@@ -17,6 +18,7 @@ export const Tile = ({ children, onClick, points, bonus, backgroundColor = 'var(
 
   return (
     <StylesWrapper
+      className={className}
       data-testid="tile"
       backgroundColor={backgroundColor}
       role={role}
