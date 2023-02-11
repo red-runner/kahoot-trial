@@ -14,4 +14,5 @@ export const StylesWrapper = styled.div`
   padding-left: var(--spacing-l);
   width: 100%;
   box-shadow: var(--box-shadow);
+  box-sizing: border-box;
 `;
