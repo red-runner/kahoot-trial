@@ -1,0 +1,41 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:jest/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": 2,
+    "no-undef": "error"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "overrides": [
+    {
+      "rules": {
+        "no-undef": "off"
+      },
+      "files": ["*.ts", "*.tsx"]
+    },
+    {
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      },
+      "files": ["*.js"]
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}

@@ -21,7 +21,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write \"./**/*.{ts,tsx,json,mdx,js}\"",
+    "commit:prettier": "git add .; git commit -m 'chore(prettier): format files'",
+    "pre-push": "npm run prettier; npm run commit:prettier; npm run lint; npm run build",
+    "lint:ts": "eslint . --ext=.tsx,.ts"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +46,14 @@
     ]
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.26"
+    "@types/styled-components": "5.1.26",
+    "@typescript-eslint/eslint-plugin": "5.33.0",
+    "@typescript-eslint/parser": "5.33.0",
+    "eslint": "8.21.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-import-resolver-typescript": "3.5.1",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jest": "27.0.1",
+    "eslint-plugin-prettier": "4.2.1"
   }
 }

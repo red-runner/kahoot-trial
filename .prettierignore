@@ -1,0 +1,17 @@
+# secret files
+.gitconfig
+
+# environment files
+.env.*
+!.env.example
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# reports
+/reports
