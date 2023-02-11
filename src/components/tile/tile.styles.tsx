@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { montserratRegularDisplay } from "../../styles";
+import styled from 'styled-components';
+import { montserratRegularDisplay } from '../../styles';
 
 export const StylesWrapper = styled.div<{ backgroundColor: string }>`
   ${montserratRegularDisplay}

@@ -1,10 +1,13 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   :root {
     /**Achromatic */
     --white: #ffffff;
     --black: #000000;
+
+    /**Colors */
+    --primary: #45178e;
 
     /** Spacings */
     --spacing-xxs: 0.25rem;

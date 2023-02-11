@@ -1,4 +1,4 @@
-import { css } from "styled-components";
+import { css } from 'styled-components';
 
 export const montserratRegularDisplay = css`
   --font-size: 5rem;

@@ -1,2 +1,2 @@
-export * from "./tile";
-export * from "./header";
+export * from './tile';
+export * from './header';

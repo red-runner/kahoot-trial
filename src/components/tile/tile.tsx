@@ -1,4 +1,4 @@
-import { StylesWrapper } from "./tile.styles";
+import { StylesWrapper } from './tile.styles';
 
 interface TileProps {
   children: string;
@@ -8,17 +8,11 @@ interface TileProps {
   backgroundColor: string;
 }
 
-export const Tile = ({
-  children,
-  onClick,
-  points,
-  bonus,
-  backgroundColor = "#45178e",
-}: TileProps) => {
+export const Tile = ({ children, onClick, points, bonus, backgroundColor = 'var(--primary)' }: TileProps) => {
   let role;
 
   if (onClick) {
-    role = "button";
+    role = 'button';
   }
 
   return (

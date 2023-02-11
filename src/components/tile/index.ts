@@ -1,1 +1,1 @@
-export { Tile } from "./tile";
+export { Tile } from './tile';
