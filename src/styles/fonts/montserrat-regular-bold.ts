@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 
 export const montserratRegularBold = css`
-  --font-size: 14px;
+  --font-size: 1rem;
 
   font-size: var(--font-size);
   font-weight: 700;
