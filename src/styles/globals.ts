@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
 
     /**Colors */
     --primary: #45178e;
+    --secondary: #ffe949;
 
     /** Spacings */
     --spacing-xxs: 0.25rem;
@@ -24,6 +25,9 @@ export const GlobalStyles = createGlobalStyle`
     --spacing-xxxjumbo: 4rem;
     --spacing-mega: 4.5rem;
     --spacing-giga: 7rem;
+
+    /** Borders */
+    --border-radius: 6px;
   }
 
     body {
