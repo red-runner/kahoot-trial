@@ -2,7 +2,7 @@ import { FC, useLayoutEffect } from 'react';
 
 import { PlayerItem, usePlayerScore } from '../../hooks';
 import { getScore } from '../../utils';
-import { KAHOOT_GAME_HEADER, KAHOOT_PLAYER_HEADER, NEW_GAME, SCORE_HEADER_ITEMS, TILES } from '../../constants';
+import { KAHOOT_GAME_HEADER, KAHOOT_PLAYER_HEADER, NEW_GAME, SCORE_HEADER_ITEMS } from '../../constants';
 import { Header } from '../header';
 import { FlexContainer } from '../flex-container';
 import { Tile } from '../tile';
