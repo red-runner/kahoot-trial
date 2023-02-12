@@ -1,4 +1,4 @@
-# Getting Started.
+# Getting Started 🪴
 
 Hi 👋🏻 and welcome to this humble game exercise. First of all, I want to thank you for
 taking the time for reviewing this test. Hopefully, it will be what you're looking for (fingers crossed 🤞🏻).
