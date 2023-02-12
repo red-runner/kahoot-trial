@@ -1,9 +1,11 @@
 import { StylesWrapper } from './header.styles';
+import { HeaderProps } from './header.interface';
+import { FC } from 'react';
 
-interface HeaderProps {
-  children: string;
-}
+export const Header: FC<HeaderProps> = ({ children }: HeaderProps) => {
+  if (!children) {
+    return null;
+  }
 
-export const Header = ({ children }: HeaderProps) => {
   return <StylesWrapper data-testid="header">{children}</StylesWrapper>;
 };
