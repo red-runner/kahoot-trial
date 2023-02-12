@@ -8,13 +8,13 @@ export const Item: FC<ItemProps> = ({ tile, quantity, score }) => {
     <StylesWrapper className="player-item" data-testid="player-item">
       <Tile
         style={{ '--tile-size': '3rem', '--font-size': '1.5rem' }}
-        className="player__tile"
+        className="item__tile"
         backgroundColor={tile?.backgroundColor}
       >
         {tile?.children}
       </Tile>
-      <span className="player-item__quantity">{quantity}</span>
-      <span className="player-item__score">{score}</span>
+      <span className="item__quantity">{quantity}</span>
+      <span className="item__score">{score}</span>
     </StylesWrapper>
   );
 };
