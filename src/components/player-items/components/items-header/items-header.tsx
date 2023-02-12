@@ -9,9 +9,7 @@ export const ItemsHeader: FC<ItemsHeaderProps> = ({ fields }) => {
 
   const gridTemplateColumns = fields
     .reduce<string[]>((acc) => {
-      const getColumn = (n: number) => `calc(100% / ${n})`;
-
-      acc.push(getColumn(fields?.length));
+      acc.push(`calc(100% / ${fields.length})`);
 
       return acc;
     }, [])
