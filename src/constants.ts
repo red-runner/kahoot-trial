@@ -1,7 +1,7 @@
 export const TILES = [
   {
     children: 'A',
-    backgroundColor: 'red',
+    backgroundColor: '#227C9D',
     points: 50,
     bonus: {
       points: 200,
@@ -10,7 +10,7 @@ export const TILES = [
   },
   {
     children: 'B',
-    backgroundColor: 'blue',
+    backgroundColor: '#17C3B2',
     points: 30,
     bonus: {
       points: 90,
@@ -19,14 +19,19 @@ export const TILES = [
   },
   {
     children: 'C',
-    backgroundColor: 'purple',
+    backgroundColor: '#FFCB77',
     points: 20
   },
   {
     children: 'D',
-    backgroundColor: 'green',
+    backgroundColor: '#FE6D73',
     points: 15
   }
 ];
 
 export const NEW_GAME = 'NEW GAME';
+export const BONUSES = 'BONUSES';
+export const TOTAL = 'TOTAL';
+export const KAHOOT_GAME_HEADER = 'KAHOOT TILES GAME';
+export const KAHOOT_PLAYER_HEADER = 'PLAYER SCORE';
+export const SCORE_HEADER_ITEMS = ['Item', 'Qty', 'Score'];
