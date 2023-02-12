@@ -9,6 +9,7 @@ export const StylesWrapper = styled.div<Omit<FlexContainerProps, 'children'>>`
   align-items: ${(props) => props.alignItems};
   flex-wrap: ${(props) => props.flexWrap};
   flex-direction: ${(props) => props.flexDirection};
+  flex-grow: ${(props) => props.flexGrow};
   gap: ${(props) => props.gap}rem;
   margin: ${(props) => props.margin}rem;
   padding: ${(props) => props.padding}rem;

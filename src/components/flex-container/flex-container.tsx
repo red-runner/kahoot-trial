@@ -10,10 +10,15 @@ export const FlexContainer: FC<FlexContainerProps> = ({
   alignItems = 'flex-start',
   flexWrap = 'wrap',
   flexDirection = 'row',
+  flexGrow = 0,
   gap = 0,
   margin = 0,
   padding = 0
 }) => {
+  if (!children) {
+    return null;
+  }
+
   return (
     <StylesWrapper
       style={style}
@@ -21,6 +26,7 @@ export const FlexContainer: FC<FlexContainerProps> = ({
       alignItems={alignItems}
       flexWrap={flexWrap}
       flexDirection={flexDirection}
+      flexGrow={flexGrow}
       gap={gap}
       margin={margin}
       padding={padding}
