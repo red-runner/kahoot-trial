@@ -3,6 +3,6 @@ export interface ItemProps {
     children: string;
     backgroundColor: string;
   };
-  quantity: number;
-  score: number;
+  quantity?: number;
+  score?: number;
 }
