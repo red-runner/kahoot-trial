@@ -5,8 +5,7 @@ import { StylesWrapper } from './tile.styles';
 export const Tile: FC<TileProps> = ({
   children,
   onClick,
-  points,
-  bonus,
+
   backgroundColor = 'var(--primary)',
   className,
   style
@@ -25,7 +24,7 @@ export const Tile: FC<TileProps> = ({
       backgroundColor={backgroundColor}
       role={role}
       onClick={() => {
-        onClick && points && bonus && onClick({ points, bonus });
+        onClick && onClick();
       }}
     >
       {children}
